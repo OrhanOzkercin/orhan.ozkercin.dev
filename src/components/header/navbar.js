@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Github, Linkedin, Hackerrank, Twitter } from "../../../public/icons";
 import { ThemeSwitch } from "../theme-changer/theme-changer";
 
 export const Navbar = () => {
@@ -14,7 +15,23 @@ export const Navbar = () => {
         />
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-semibold text-light-text dark:text-dark-text sm:text-4xl">Orhan Özkerçin</h1>
-          <span>orhan@ozkercin.dev</span>
+          <a href="mailto:orhan@ozkercin.dev" target="_blank">
+            orhan@ozkercin.dev
+          </a>
+          <div className="flex gap-2">
+            <a href="https://github.com/OrhanOzkercin" target="_blank">
+              <Github className="cursor" />
+            </a>
+            <a href="https://www.linkedin.com/in/orhanozkercin/" target="_blank">
+              <Linkedin />
+            </a>
+            <a href="https://www.hackerrank.com/orhanozkercin" target="_blank">
+              <Hackerrank />
+            </a>
+            <a href="https://twitter.com/orhanozkercin" target="_blank">
+              <Twitter />
+            </a>
+          </div>
         </div>
       </div>
       <ThemeSwitch />

@@ -1,5 +1,5 @@
 import Brief from "./brief";
-import { Experiences } from "./experiences";
+import Experiences from "./experiences";
 
 const About = ({ className }) => {
   return (

@@ -1,7 +1,7 @@
 import { ExperienceInfoCard } from "@/components/cards/experience-info-card";
 import { Step, Stepper } from "@/helpers/stepper";
 
-export const Experiences = ({ className }) => {
+const Experiences = ({ className }) => {
   const experiences = [
     {
       position: "Frontend Developer",
@@ -79,3 +79,5 @@ export const Experiences = ({ className }) => {
     </section>
   );
 };
+
+export default Experiences;

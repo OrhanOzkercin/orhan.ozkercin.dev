@@ -34,7 +34,7 @@ export const CardWithMedia = ({
               alt={image.alt}
               height={image.height || 400}
               width={image.width || 400}
-              className="object-cover sm:object-contain"
+              className="object-cover"
             />
           ))}
           {video && (

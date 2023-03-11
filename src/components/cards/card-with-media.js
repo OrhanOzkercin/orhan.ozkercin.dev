@@ -1,6 +1,17 @@
 import Image from "next/image";
 
-export const CardWithMedia = ({ logo, images, title, description, video, link, date, organizator, className }) => {
+export const CardWithMedia = ({
+  logo,
+  images,
+  title,
+  description,
+  video,
+  videoEmbed,
+  link,
+  date,
+  organizator,
+  className,
+}) => {
   return (
     <div className={className}>
       <div className="mb-4 flex items-center">

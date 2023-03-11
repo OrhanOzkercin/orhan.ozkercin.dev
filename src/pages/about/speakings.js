@@ -45,7 +45,7 @@ const Speakings = ({ className }) => {
       {
         path: "/events/ankara-3.png",
         alt: "Orhan Ozkercin making presentation about JavaScript at GDG Ankara event",
-        width: 407,
+        width: 409,
       },
     ],
   };
@@ -62,16 +62,58 @@ const Speakings = ({ className }) => {
         video={gdgIzmirMedia.video}
         className="mb-12"
       />
-
       <CardWithMedia
         title="Devfest'22"
         date="2022"
         organizator="GDG Ankara"
-        description='Devfest is a conference organized by GDG Izmir. I gave a talk about "JavaScript: Behind The Scenes" at the conference. There were more than 1000 attendees at the conference'
+        description='Devfest is a conference organized by GDG Ankara. I gave a talk about "JavaScript: Behind The Scenes" at the conference. There were more than 300 people listen my talk at the conference'
         images={gdgAnkaraMedia.images}
         logo={gdgAnkaraMedia.logo}
         video={gdgAnkaraMedia.video}
+        className="mb-12"
       />
+      <div className="mb-12">
+        <CardWithMedia
+          title="Random Ship"
+          date="2022"
+          organizator="Frontendship"
+          description='Frontendship is a community that organizes events about frontend technologies. I gave a talk about "JavaScript: Behind The Scenes" at the event. There were more than 100 people listen my talk at the event'
+          logo={{
+            path: "/frontendship-logo.png",
+            alt: "Frontendship Logo",
+            width: 50,
+          }}
+        />
+        <iframe
+          width="100%"
+          height="700"
+          src="https://www.youtube.com/embed/X1m0WsnotJc"
+          title="Random Ship 2: Orhan Özkerçin - JavaScript Behind The Scenes"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <CardWithMedia
+        title="Meetup #21"
+        date="2022"
+        organizator="Teknasyon"
+        logo={{
+          path: "/teknasyon-logo.png",
+          alt: "Teknasyon Logo",
+          width: 50,
+        }}
+      />
+      <iframe
+        width="100%"
+        height="700"
+        src="https://www.youtube.com/embed/r4SJ7QnOFqE"
+        title="Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?, Orhan Özkerçin - Meetup #21"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </section>
   );
 };

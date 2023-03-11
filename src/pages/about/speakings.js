@@ -72,7 +72,7 @@ const Speakings = ({ className }) => {
         video={gdgAnkaraMedia.video}
         className="mb-12"
       />
-      <div className="mb-12 flex justify-between ">
+      <div className="mb-12 flex flex-col justify-between sm:flex-row">
         <CardWithMedia
           title="Random Ship"
           date="2022"
@@ -83,11 +83,12 @@ const Speakings = ({ className }) => {
             alt: "Frontendship Logo",
             width: 50,
           }}
-          className="basis-1/2"
+          className="flex sm:basis-1/2"
         />
         <iframe
-          width="680"
+          width="100%"
           height="330"
+          className="sm:ml-16 sm:basis-1/2"
           src="https://www.youtube.com/embed/X1m0WsnotJc"
           title="Random Ship 2: Orhan Özkerçin - JavaScript Behind The Scenes"
           frameborder="0"
@@ -95,7 +96,7 @@ const Speakings = ({ className }) => {
           allowfullscreen
         ></iframe>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col justify-between sm:flex-row">
         <CardWithMedia
           title="Meetup #21"
           date="2022"
@@ -106,16 +107,17 @@ const Speakings = ({ className }) => {
             alt: "Teknasyon Logo",
             width: 50,
           }}
-          className="basis-1/2"
+          className="sm:basis-1/2"
         />
         <iframe
-          width="680"
+          width="100%"
           height="330"
           src="https://www.youtube.com/embed/r4SJ7QnOFqE"
           title="Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?, Orhan Özkerçin - Meetup #21"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          className="sm:ml-16 sm:basis-1/2"
         ></iframe>
       </div>
     </section>

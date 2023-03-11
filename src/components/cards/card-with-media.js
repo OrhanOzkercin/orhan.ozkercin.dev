@@ -26,19 +26,19 @@ export const CardWithMedia = ({
         </div>
       </div>
       {images && (
-        <div className="flex w-full gap-1 overflow-y-auto lg:justify-center lg:gap-4">
+        <div className="flex w-full gap-1 overflow-y-auto lg:justify-between lg:gap-4">
           {images.map((image, index) => (
             <Image
               key={index}
               src={image.path}
               alt={image.alt}
-              height={image.height || 400}
-              width={image.width || 400}
-              className="object-cover"
+              height={image.height || 384}
+              width={image.width || 384}
+              className="h-96 w-full object-cover"
             />
           ))}
           {video && (
-            <video controls width={video.width || 300} height={video.height}>
+            <video controls className="h-96 w-96" width={video.width || 300} height={video.height}>
               <source src={video.path} type="video/mp4"></source>
             </video>
           )}

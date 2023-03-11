@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Education = ({ className }) => {
   return (
-    <section className={`mt-12 flex flex-col justify-start gap-3 ${className}`}>
+    <section className={`mt-12 flex flex-col items-start justify-start gap-3 lg:mt-0 ${className}`}>
       <h1 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">Education</h1>
       <div className="flex gap-3">
         <Image

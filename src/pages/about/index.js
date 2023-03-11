@@ -5,12 +5,12 @@ import Speakings from "./speakings";
 
 const About = ({ className }) => {
   return (
-    <section className={`flex flex-col justify-start gap-3 ${className}`}>
-      <Brief />
-      <Experiences />
-      <Education />
-      {/* <Speakings /> */}
-    </section>
+    <div className={`grid grid-cols-3 gap-3 ${className}`}>
+      <Brief className="col-span-3 lg:col-span-2" />
+      <Education className="col-span-3 lg:col-span-1" />
+      <Experiences className="col-span-3" />
+      <Speakings className="col-span-3" />
+    </div>
   );
 };
 

@@ -47,7 +47,7 @@ const Experiences = ({ className }) => {
       position: "Frontend Developer",
       companyName: "Amatis",
       dateStart: "September 2020",
-      dateEnd: "April 2022",
+      dateEnd: "April 2021",
       description: `Contributed to create a web application for medical professionals to track ECG data of patients. 
           The application is built with Angular 8 and uses a REST API to communicate with the backend.
           `,

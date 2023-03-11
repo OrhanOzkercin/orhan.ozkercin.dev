@@ -56,7 +56,7 @@ const Speakings = ({ className }) => {
         title="Devfest'22"
         date="2022"
         organizator="GDG Izmir"
-        description='Devfest is a conference organized by GDG Izmir. I gave a talk about "JavaScript: Behind The Scenes" at the conference. There were more than 1000 attendees at the conference'
+        description='Devfest is a conference hosted by GDG Izmir, where I delivered a talk titled "JavaScript: Behind The Scenes." The conference was attended by over 1000 participants.'
         images={gdgIzmirMedia.images}
         logo={gdgIzmirMedia.logo}
         video={gdgIzmirMedia.video}
@@ -66,7 +66,7 @@ const Speakings = ({ className }) => {
         title="Devfest'22"
         date="2022"
         organizator="GDG Ankara"
-        description='Devfest is a conference organized by GDG Ankara. I gave a talk about "JavaScript: Behind The Scenes" at the conference. There were more than 300 people listen my talk at the conference'
+        description='Devfest is a conference hosted by GDG Ankara. During the conference, I presented a talk titled "JavaScript: Behind The Scenes," which was attended by more than 300 people.'
         images={gdgAnkaraMedia.images}
         logo={gdgAnkaraMedia.logo}
         video={gdgAnkaraMedia.video}
@@ -77,7 +77,7 @@ const Speakings = ({ className }) => {
           title="Random Ship"
           date="2022"
           organizator="Frontendship"
-          description='Frontendship is a community that organizes events about frontend technologies. I gave a talk about "JavaScript: Behind The Scenes" at the event. There were more than 100 people listen my talk at the event'
+          description='Frontendship is a community that hosts events on frontend technologies. During the event, I presented a talk titled "JavaScript: Behind The Scenes," which was watched more than 8000.'
           logo={{
             path: "/frontendship-logo.png",
             alt: "Frontendship Logo",
@@ -101,7 +101,7 @@ const Speakings = ({ className }) => {
           title="Meetup #21"
           date="2022"
           organizator="Teknasyon"
-          description='Teknasyon organazes meetups about technology once in a every mounth. I gave a talk about "Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?" at the event.'
+          description='Teknasyon organizes monthly meetups on technology. I presented a talk on "What are Data Structures and Why are There so Many?" during the latest event.'
           logo={{
             path: "/teknasyon-logo.png",
             alt: "Teknasyon Logo",

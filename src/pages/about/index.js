@@ -1,4 +1,5 @@
 import Brief from "./brief";
+import Certificates from "./certificates";
 import Education from "./education";
 import Experiences from "./experiences";
 import Speakings from "./speakings";
@@ -8,7 +9,8 @@ const About = ({ className }) => {
     <div className={`grid grid-cols-3 gap-3 ${className}`}>
       <Brief className="col-span-3 lg:col-span-2" />
       <Education className="col-span-3 lg:col-span-1" />
-      <Experiences className="col-span-3" />
+      <Experiences className="col-span-3 lg:col-span-2" />
+      <Certificates className="col-span-3 lg:col-span-1" />
       <Speakings className="col-span-3" />
     </div>
   );

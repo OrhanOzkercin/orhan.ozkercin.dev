@@ -22,7 +22,7 @@ export const CardWithMedia = ({
             {organizator && <span className="">{organizator}</span>}
             {date && <span>{date}</span>}
           </div>
-          {description && <p className="mt-3 w-full">{description}</p>}
+          {description && <p className="mt-3 w-full text-gray-500 dark:text-gray-400">{description}</p>}
         </div>
       </div>
       {images && (
@@ -34,7 +34,7 @@ export const CardWithMedia = ({
               alt={image.alt}
               height={image.height || 400}
               width={image.width || 400}
-              className=" object-contain"
+              className="object-cover sm:object-contain"
             />
           ))}
           {video && (

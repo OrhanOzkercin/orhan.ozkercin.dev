@@ -13,6 +13,7 @@ export default function Document() {
           property="og:description"
           content="With over 3 years of experience in frontend development, I am a skilled developer specializing in JavaScript. My passion for building visually stunning and functional user interfaces has driven me to become proficient in several popular frameworks, including Angular, VueJS, and ReactJS."
         />
+        <meta property="og:image" content="/social-bg.png" />
       </Head>
       <body>
         <Main />

@@ -1,4 +1,4 @@
-import { ExperienceInfoCard } from "@/components/cards/experience-info-card";
+import { InfoCard } from "@/components/cards/info-card";
 import { Step, Stepper } from "@/helpers/stepper";
 
 const Experiences = ({ className }) => {
@@ -63,14 +63,15 @@ const Experiences = ({ className }) => {
         {experiences.map((experience, index) => {
           return (
             <Step key={index} icon={experience.image}>
-              <ExperienceInfoCard
-                position={experience.position}
-                companyName={experience.companyName}
-                stack={experience.stack}
+              <InfoCard
+                title={experience.position}
+                subTitle={experience.companyName}
+                list={experience.stack}
+                listName="Stack"
                 dateStart={experience.dateStart}
                 dateEnd={experience.dateEnd}
                 description={experience.description}
-                image={experience.image}
+                subTitleLink={experience.link}
               />
             </Step>
           );

@@ -6,22 +6,24 @@ const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   if (!mounted) {
     return null;
   }
-
   return theme === "dark" ? (
-    <button type="button" onClick={() => setTheme("light")}>
+    <button type="button" onClick={toggleTheme}>
       <Sunny className="text-2xl text-yellow-500" />
     </button>
   ) : (
     <button>
-      <Moon type="button" className="text-2xl text-neutral-800" onClick={() => setTheme("dark")} />
+      <Moon type="button" className="text-2xl text-neutral-800" onClick={toggleTheme} />
     </button>
   );
 };

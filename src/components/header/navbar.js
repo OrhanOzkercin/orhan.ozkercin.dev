@@ -19,16 +19,16 @@ export const Navbar = () => {
             orhan@ozkercin.dev
           </a>
           <div className="flex gap-2">
-            <a href="https://github.com/OrhanOzkercin" target="_blank">
+            <a aria-label="Github profile link" href="https://github.com/OrhanOzkercin" target="_blank">
               <Github className="cursor" />
             </a>
-            <a href="https://www.linkedin.com/in/orhanozkercin/" target="_blank">
+            <a aria-label="Linkedin profile link" href="https://www.linkedin.com/in/orhanozkercin/" target="_blank">
               <Linkedin />
             </a>
-            <a href="https://www.hackerrank.com/orhanozkercin" target="_blank">
+            <a aria-label="Hackerrank profile link" href="https://www.hackerrank.com/orhanozkercin" target="_blank">
               <Hackerrank />
             </a>
-            <a href="https://twitter.com/orhanozkercin" target="_blank">
+            <a aria-label="Twitter profile link" href="https://twitter.com/orhanozkercin" target="_blank">
               <Twitter />
             </a>
           </div>

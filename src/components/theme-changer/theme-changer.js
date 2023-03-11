@@ -17,13 +17,14 @@ const ThemeSwitch = () => {
   if (!mounted) {
     return null;
   }
+
   return theme === "dark" ? (
-    <button type="button" onClick={toggleTheme}>
+    <button name="light-theme" type="button" onClick={toggleTheme}>
       <Sunny className="text-2xl text-yellow-500" />
     </button>
   ) : (
-    <button>
-      <Moon type="button" className="text-2xl text-neutral-800" onClick={toggleTheme} />
+    <button type="button" name="dark-theme" onClick={toggleTheme}>
+      <Moon className="text-2xl text-neutral-800" />
     </button>
   );
 };

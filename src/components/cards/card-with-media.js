@@ -14,7 +14,7 @@ export const CardWithMedia = ({
 }) => {
   return (
     <div className={className}>
-      <div className="mb-4 flex items-center">
+      <div className="mb-4 flex items-start">
         <Image src={logo.path} alt={logo.alt} width={logo.width || 200} height={logo.height || 180} />
         <div className="ml-3 flex flex-col items-start gap-x-3">
           <h2 className="text-base font-semibold text-light-text dark:text-dark-text">{title}</h2>

@@ -72,7 +72,7 @@ const Speakings = ({ className }) => {
         video={gdgAnkaraMedia.video}
         className="mb-12"
       />
-      <div className="mb-12">
+      <div className="mb-12 flex justify-between ">
         <CardWithMedia
           title="Random Ship"
           date="2022"
@@ -83,10 +83,11 @@ const Speakings = ({ className }) => {
             alt: "Frontendship Logo",
             width: 50,
           }}
+          className="basis-1/2"
         />
         <iframe
-          width="100%"
-          height="700"
+          width="680"
+          height="330"
           src="https://www.youtube.com/embed/X1m0WsnotJc"
           title="Random Ship 2: Orhan Özkerçin - JavaScript Behind The Scenes"
           frameborder="0"
@@ -94,26 +95,29 @@ const Speakings = ({ className }) => {
           allowfullscreen
         ></iframe>
       </div>
-
-      <CardWithMedia
-        title="Meetup #21"
-        date="2022"
-        organizator="Teknasyon"
-        logo={{
-          path: "/teknasyon-logo.png",
-          alt: "Teknasyon Logo",
-          width: 50,
-        }}
-      />
-      <iframe
-        width="100%"
-        height="700"
-        src="https://www.youtube.com/embed/r4SJ7QnOFqE"
-        title="Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?, Orhan Özkerçin - Meetup #21"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <div className="flex justify-between">
+        <CardWithMedia
+          title="Meetup #21"
+          date="2022"
+          organizator="Teknasyon"
+          description='Teknasyon organazes meetups about technology once in a every mounth. I gave a talk about "Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?" at the event.'
+          logo={{
+            path: "/teknasyon-logo.png",
+            alt: "Teknasyon Logo",
+            width: 50,
+          }}
+          className="basis-1/2"
+        />
+        <iframe
+          width="680"
+          height="330"
+          src="https://www.youtube.com/embed/r4SJ7QnOFqE"
+          title="Veri Yapıları Nelerdir ve Neden Bu Kadar Çoklar?, Orhan Özkerçin - Meetup #21"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
   );
 };

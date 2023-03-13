@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@orhanozkercin" />
         <meta name="twitter:creator" content="@orhanozkercin" />
         <meta name="twitter:title" content="Orhan Özkerçin" />

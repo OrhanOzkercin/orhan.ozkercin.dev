@@ -1,6 +1,7 @@
 import Brief from "./brief";
 import Certificates from "./certificates";
 import Education from "./education";
+import Expectations from "./expectation";
 import Experiences from "./experiences";
 import Speakings from "./speakings";
 
@@ -12,6 +13,7 @@ const About = ({ className }) => {
       <Experiences className="col-span-3 lg:col-span-2" />
       <Certificates className="col-span-3 lg:col-span-1" />
       <Speakings className="col-span-3" />
+      <Expectations className="col-span-3" />
     </div>
   );
 };

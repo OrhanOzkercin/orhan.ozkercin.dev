@@ -5,7 +5,7 @@ import { Hackerrank } from "../../../public/icons";
 const Certificates = ({ className }) => {
   return (
     <section className={`mt-12 flex flex-col items-start justify-start gap-3 lg:mt-0 lg:ml-16 ${className}`}>
-      <h1 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">Certificates</h1>
+      <h2 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">Certificates</h2>
       <InfoCard
         title={"JS (Intermediate) Certificate at Hackerrank"}
         titleClassName="font-normal"

@@ -34,11 +34,16 @@ export const CardWithMedia = ({
               alt={image.alt}
               height={image.height || 384}
               width={image.width || 384}
-              className="h-96 w-full object-cover"
+              className="h-96 w-full object-cover object-center"
             />
           ))}
           {video && (
-            <video controls className="h-96 w-96" width={video.width || 300} height={video.height}>
+            <video
+              controls
+              className="h-96  w-full object-cover object-center"
+              width={video.width || 300}
+              height={video.height}
+            >
               <source src={video.path} type="video/mp4"></source>
             </video>
           )}

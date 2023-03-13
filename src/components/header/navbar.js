@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Github, Linkedin, Hackerrank, Twitter } from "../../../public/icons";
+import { Github, Linkedin, Hackerrank, Twitter, Medium } from "../../assets/icons";
 import { ThemeSwitch } from "../theme-changer/theme-changer";
 
 export const Navbar = () => {
@@ -19,6 +19,9 @@ export const Navbar = () => {
             orhan@ozkercin.dev
           </a>
           <div className="flex gap-2">
+            <a aria-label="Twitter profile link" href="https://twitter.com/orhanozkercin" target="_blank">
+              <Twitter />
+            </a>
             <a aria-label="Github profile link" href="https://github.com/OrhanOzkercin" target="_blank">
               <Github className="cursor" />
             </a>
@@ -28,8 +31,8 @@ export const Navbar = () => {
             <a aria-label="Hackerrank profile link" href="https://www.hackerrank.com/orhanozkercin" target="_blank">
               <Hackerrank />
             </a>
-            <a aria-label="Twitter profile link" href="https://twitter.com/orhanozkercin" target="_blank">
-              <Twitter />
+            <a aria-label="Twitter profile link" href="https://orhanozkercin.medium.com/" target="_blank">
+              <Medium />
             </a>
           </div>
         </div>

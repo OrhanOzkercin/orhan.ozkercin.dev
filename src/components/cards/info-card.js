@@ -1,4 +1,4 @@
-import { ExternalLink } from "../../../public/icons";
+import { ExternalLink } from "../../assets/icons";
 
 export const InfoCard = ({
   title,

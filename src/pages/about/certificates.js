@@ -1,6 +1,6 @@
 import { CardWithMedia } from "@/components/cards/card-with-media";
 import { InfoCard } from "@/components/cards/info-card";
-import { Hackerrank } from "../../../public/icons";
+import { Hackerrank } from "../../assets/icons";
 
 const Certificates = ({ className }) => {
   return (

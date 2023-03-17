@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Github, Linkedin, Hackerrank, Twitter, Medium } from "../../assets/icons";
-import { ThemeSwitch } from "../theme-changer/theme-changer";
+import { ThemeSwitch } from "../../components/theme-changer/theme-changer";
 
 export const Navbar = () => {
   return (
@@ -14,7 +15,9 @@ export const Navbar = () => {
           className="rounded-full border-2 border-gray-500 dark:border-neutral-700"
         />
         <div className="flex flex-col gap-2">
-          <h1 className="text-xl font-semibold text-light-text dark:text-dark-text sm:text-4xl">Orhan Özkerçin</h1>
+          <Link href={"/"}>
+            <h1 className="text-xl font-semibold text-light-text dark:text-dark-text sm:text-4xl">Orhan Özkerçin</h1>
+          </Link>
           <a href="mailto:orhan@ozkercin.dev" target="_blank">
             orhan@ozkercin.dev
           </a>
@@ -37,7 +40,12 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <ThemeSwitch />
+      <div className="flex gap-8">
+        <Link className="text-lg font-semibold" href={"/blog/posts"}>
+          Blog
+        </Link>
+        <ThemeSwitch />
+      </div>
     </nav>
   );
 };

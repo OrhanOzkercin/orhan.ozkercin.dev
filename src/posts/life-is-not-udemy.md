@@ -2,7 +2,6 @@
   title: "Life is not Udemy (Surprise Surprise) 🤯"
   date: "2020-09-05"
   author: "Orhan Özkerçin"
-  listImage: 'cover.webp'
   excerpt: "If you are trying to learn how to programing, you may bought a course on Udemy. But problem is are you buying another one before finish first one"
   lang: "en"
 ---
@@ -26,8 +25,7 @@ Let’s get back to subject, as I said when we want to learn something new this 
 
 After I watched tens of hours my HTML and CSS tutorials and did exactly what instructor told me to do I was extremely comfortable and felt so cool because it all happened in couple of weeks, impressive 🚀. I thought that I can make something own my own. I tried to remake Shazam webpage I couldn’t even centered navigation bar properly 🤦‍♂️. It was a huge failure for me. I barely remembered what to do.
 
-![Shazam homepage](shazam.webp)
-*This is the last version of my Shazam project. Delightful 😋*
+![Shazam homepage](shazam.webp "This is the last version of my Shazam project. Delightful 😋")
 
 As you can see it’s not very impressive web site but I spend quite a bit time for this one. I assure you I learned so much when I did this. The thing that I want to say here if you don’t try to do something by yourself you can not learn.
 

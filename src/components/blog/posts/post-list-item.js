@@ -12,9 +12,8 @@ const PostListItem = ({ post }) => {
   return (
     <li>
       <Link href={linkPath}>
-        <div className="custom-border-gray relative mb-2 flex w-full gap-8 rounded-md border-[.5px] p-4 shadow-md dark:shadow-black/30">
-          <Image className="basis-1/3 rounded-md" src={imagePath} alt={slug} width={400} height={300} />
-          <div className="basis-2/3">
+        <div className="custom-border-gray relative mb-2 flex w-full flex-row gap-8 rounded-md border-[.5px] p-8 shadow-md dark:shadow-black/30">
+          <div className="">
             <h2 className="h2 mb-1 text-2xl">{title}</h2>
             <span className="mb-3 inline-block">{formattedDate(date)}</span>
             <p>{excerpt}</p>

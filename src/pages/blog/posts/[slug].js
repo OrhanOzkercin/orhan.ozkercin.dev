@@ -1,12 +1,10 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
-import { formattedDate } from "@/lib/date/formating-util";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
 
 const PostDetailPage = ({ post }) => {
-  console.log("PostDetailPage -> post:", post);
   return (
-    <div className="flex flex-col gap-5 sm:flex-row">
+    <div className="flex flex-col gap-5 md:flex-row">
       <PostContent post={post} />
       <PostSidebar post={post} />
     </div>

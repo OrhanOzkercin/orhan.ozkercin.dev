@@ -11,6 +11,9 @@ const PostDetailPage = ({ post }) => {
         <meta name="og:title" content={post.title} />
         <meta name="description" content={post.excerpt} />
         <meta name="og:url" content={`https://orhan.ozkercin.com/blog/posts/${post.slug}`} />
+        <meta name="og:description" content={post.excerpt} />
+        <meta name="og:image" content={`https://orhan.ozkercin.com/${post.image}`} />
+        <meta name="author" content="Orhan Özkerçin" />
       </Head>
       <div className="flex flex-col gap-5 md:flex-row">
         <PostContent post={post} />

@@ -102,7 +102,10 @@ Bazen firmalar sizi alt tarafı stajyer(!) olarak görüp bu tarz ayrıcalıklar
 
 ## Ne kadar ekmek o köfte
 Buraya kadar her şey çok güzel. Çok hoş isteklerimiz var fark ettiğiniz üzere. Konforumuzu, gelişimimizi, sosyal imkanlarımızı vs. düşündük. Kendimizi rahat ettirecek her detayı talep ettik, ki bunu yapmak en doğal hakkımız. Fakat şöyle bir sorunumuz var; bu isteklerimizi alt alta yazdığımızda ve firmaları bu isteklerimiz doğrultusunda filtrelediğimizde elimizde çok fazla seçenek kalmıyor ne yazık ki.
+
 Bu seçenekler ise sizden belirli konularda yetkinlikler isteyecektir. Ben yeni mezunumun ya da daha okulum devam ediyor gibi durumlar bu istekleri ortadan kaldırmayacaktır. Tabii bu detaylar sizlere çeşitli konularda esneklik getirecektir. Fakat temelde sizinle çalışmak, size yatırım yapmak için firmaların sizlerden beklediği çeşitli konular ve yetkinlikler oluyor.
+
 Gözlemlerim üzerinden bir kaç örnek vermek gerekirse, en önemli konulardan birisi sosyal anlamada takıma uyum sağlayabilecek biri olmak. Kendinizi iyi ifade edebiliyor olmanız ve doğru zamanda ifade edebiliyor olmanız fazlasıyla mühim bir mesele. Diğer bir konu İngilizce, yazılım sektörü özelinde İngilizceyi rahat olarak kullanabiliyor olmak hayati önem taşıyor. Diğer sektörler içinde büyük oranda önem arz ettiğini düşünüyorum fakat bir deneyimim yok. Tabii öğrenmeye ve çalışmaya açık biri olduğunuzu karşı tarafa hissetirebilmeniz oldukça önemli. Çalışmak istediğiniz alanla ilgili daha önceden araştırmalarınız, projeleriniz olması sizi ne istediğini bilen biri konumuna sokuyor.
 Bu hususlarda kendinizi geliştirmek kabul alma ihtimalinizi bir hayli arttıracaktır.
+
 Bu yazımda kendi deneyimlediğim ve dikkate aldığım konuları sizlerle paylaşmak istedim. Umarım en azından birilerine faydalı olabilecek bir yazı olmuştur. Bir sonraki yazımda ise staj sonrası yaşadığım deneyimlerden bahsedeceğim. Buraya kadar okuduğunuz için teşekkür ederim.

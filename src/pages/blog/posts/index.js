@@ -1,8 +1,16 @@
 import PostList from "@/components/blog/posts/post-list";
 import { getAllPosts } from "@/lib/posts/post-util";
+import Head from "next/head";
 
 const PostListPage = ({ posts }) => {
-  return <PostList posts={posts} />;
+  return (
+    <>
+      <Head>
+        <title>Orhan Özkerçin - Blog</title>
+      </Head>
+      <PostList posts={posts} />
+    </>
+  );
 };
 
 export async function getStaticProps() {

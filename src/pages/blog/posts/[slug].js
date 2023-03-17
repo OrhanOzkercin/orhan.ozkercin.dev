@@ -1,13 +1,22 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
+import Head from "next/head";
 
 const PostDetailPage = ({ post }) => {
   return (
-    <div className="flex flex-col gap-5 md:flex-row">
-      <PostContent post={post} />
-      <PostSidebar post={post} />
-    </div>
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="og:title" content={post.title} />
+        <meta name="description" content={post.excerpt} />
+        <meta name="og:url" content={`https://orhan.ozkercin.com/blog/posts/${post.slug}`} />
+      </Head>
+      <div className="flex flex-col gap-5 md:flex-row">
+        <PostContent post={post} />
+        <PostSidebar post={post} />
+      </div>
+    </>
   );
 };
 

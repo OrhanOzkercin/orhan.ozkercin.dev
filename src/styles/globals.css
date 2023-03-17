@@ -2,10 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .h2 {
+    @apply mb-8 text-3xl font-bold text-light-text dark:text-dark-text;
+  }
+
+  .custom-border-gray {
+    @apply border-gray-200 dark:border-black/30;
+  }
+}
+
 body {
   @apply bg-gray-100 text-gray-900;
 }
 
 .dark body {
   @apply bg-neutral-800 text-gray-400;
+}
+
+a {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }

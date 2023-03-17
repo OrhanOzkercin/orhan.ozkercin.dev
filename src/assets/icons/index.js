@@ -6,3 +6,5 @@ export { Twitter } from "./twitter.js";
 export { Hackerrank } from "./hackerrank.js";
 export { ExternalLink } from "./external-link.js";
 export { Medium } from "./medium.js";
+export { TrFlag } from "./tr-flag.js";
+export { UsFlag } from "./us-flag.js";

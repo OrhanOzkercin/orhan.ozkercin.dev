@@ -4,7 +4,7 @@ import Image from "next/image";
 const Education = ({ className }) => {
   return (
     <section className={`mt-12 flex flex-col items-start justify-start gap-3 lg:mt-0 lg:ml-16 ${className}`}>
-      <h2 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">Education</h2>
+      <h2 className="h2">Education</h2>
       <div className="flex gap-3">
         <Image
           src="/ogu-logo.png"

@@ -58,7 +58,7 @@ const Experiences = ({ className }) => {
   ];
   return (
     <section className={`mt-12 flex flex-col justify-start gap-3 ${className}`}>
-      <h2 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">Experience</h2>
+      <h2 className="h2">Experience</h2>
       <Stepper className="ml-5" iconClassName="ring-4 ring-gray-300 dark:ring-neutral-600">
         {experiences.map((experience, index) => {
           return (

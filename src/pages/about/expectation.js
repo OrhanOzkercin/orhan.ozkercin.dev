@@ -4,7 +4,7 @@ import Image from "next/image";
 const Expectations = ({ className }) => {
   return (
     <section className={`mt-12 flex flex-col justify-start gap-3 ${className}`}>
-      <h2 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text">My Expectations</h2>
+      <h2 className="h2">My Expectations</h2>
       <ol>
         <li className="text-xl leading-10 text-gray-500 dark:text-gray-400">
           👉 A team with good communication skills.{" "}

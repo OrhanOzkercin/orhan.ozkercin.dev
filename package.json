@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "disqus-react": "^1.1.5",
+    "@giscus/react": "^2.2.8",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
     "gray-matter": "^4.0.3",

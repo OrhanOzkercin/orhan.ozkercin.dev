@@ -4,7 +4,6 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import PostHeader from "./post-header";
 import Image from "next/image";
-import DisqusComments from "@/components/disqus";
 
 const PostContent = ({ post }) => {
   const imagePath = post.coverImage && `/blog/posts/${post.slug}/${post.coverImage}`;

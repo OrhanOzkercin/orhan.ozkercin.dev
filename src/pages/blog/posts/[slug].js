@@ -1,17 +1,11 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
-import DisqusComments from "@/components/disqus";
+import GisqusComments from "@/components/gisqus";
+
 import Meta from "@/components/meta";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
-import { DiscussionEmbed } from "disqus-react";
-import { useEffect, useState } from "react";
 
 const PostDetailPage = ({ post }) => {
-  const [showDisqus, setShowDisqus] = useState(false);
-  useEffect(() => {
-    setShowDisqus(true);
-  }, []);
-
   return (
     <>
       <Meta
@@ -27,14 +21,9 @@ const PostDetailPage = ({ post }) => {
         <PostContent post={post} />
         <PostSidebar post={post} />
       </div>
-      <DiscussionEmbed
-        shortname="orhan-ozkercin"
-        config={{
-          url: post.slug,
-          identifier: post.slug, // Single post id
-          title: post.title, // Single post title
-        }}
-      />
+      <div className="mt-10 w-full lg:w-2/3">
+        <GisqusComments />
+      </div>
     </>
   );
 };

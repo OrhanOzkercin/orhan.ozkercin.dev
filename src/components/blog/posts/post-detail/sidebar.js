@@ -38,8 +38,6 @@ const PostSidebar = ({ post }) => {
           </div>
         </div>
       </div>
-      <p>{formattedDate(post.date)}</p>
-      <p>{post.readTime}</p>
     </aside>
   );
 };

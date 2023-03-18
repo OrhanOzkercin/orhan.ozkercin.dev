@@ -18,7 +18,7 @@ const PostListItem = ({ post }) => {
   const linkPath = `/blog/posts/${slug}`;
 
   return (
-    <li className="h-56">
+    <li className="lg:h-56">
       <Link href={linkPath}>
         <div className="custom-border-gray relative mb-2 flex w-full flex-row gap-8 rounded-md border-[.5px] p-8 shadow-md dark:shadow-black/30">
           <div className="">

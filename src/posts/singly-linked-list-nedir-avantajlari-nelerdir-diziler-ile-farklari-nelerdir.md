@@ -1,6 +1,6 @@
 ---
   title: "Singly Linked List nedir? Avantajları nelerdir? Diziler ile farkları nelerdir?"
-  date: "2021-11-05"
+  date: "2021-10-05"
   author: "Orhan Özkerçin"
   excerpt: "Bilgisayar bilimlerin vazgeçilmez konularından singly link list nedir ve diziler ile farkları nelerdir
   konusunu anlatmaya çalıştığım blog yazısı."

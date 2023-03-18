@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import readingTime from "reading-time";
 
 const postsDirectory = path.join(process.cwd(), "src", "posts");
 
@@ -15,11 +16,13 @@ const getPostData = (postIdentifier) => {
   const fileContent = fs.readFileSync(filePath, { encoding: "utf8" });
 
   const { data: meta, content } = matter(fileContent);
+  const readTime = readingTime(content).text;
 
   const postData = {
     slug,
     ...meta,
     content,
+    readTime,
   };
   return postData;
 };

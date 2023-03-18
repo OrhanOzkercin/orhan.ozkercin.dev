@@ -3,6 +3,14 @@ import { useTheme } from "next-themes";
 const GisqusComments = () => {
   const { theme, setTheme } = useTheme();
 
+  const getThene = () => {
+    if (theme === "dark") {
+      return "dark_protanopia";
+    } else {
+      return "light_protanopia";
+    }
+  };
+
   return (
     <Giscus
       id="comments"
@@ -12,7 +20,7 @@ const GisqusComments = () => {
       categoryId="DIC_kwDOJIDNOc4CU93F"
       mapping="title"
       strict="0"
-      theme={"transparent_dark"}
+      theme={getThene()}
       lang="en"
       crossorigin="orhan.ozkercin.dev"
       term="Welcome to Orhan Ozkercin component!"

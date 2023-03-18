@@ -6,7 +6,6 @@ function cutAndAddEllipsis(str) {
   var words = str.split(" ");
 
   if (words.length > 20) {
-    // join the first 20 words and add '...' at the end
     var trimmedString = words.slice(0, 20).join(" ") + "...";
     return trimmedString;
   } else {
@@ -19,7 +18,7 @@ const PostListItem = ({ post }) => {
   const linkPath = `/blog/posts/${slug}`;
 
   return (
-    <li>
+    <li className="h-56">
       <Link href={linkPath}>
         <div className="custom-border-gray relative mb-2 flex w-full flex-row gap-8 rounded-md border-[.5px] p-8 shadow-md dark:shadow-black/30">
           <div className="">

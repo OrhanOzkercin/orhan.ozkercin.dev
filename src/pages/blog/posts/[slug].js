@@ -4,6 +4,7 @@ import { getPostData, getPostFiles } from "@/lib/posts/post-util";
 import Head from "next/head";
 
 const PostDetailPage = ({ post }) => {
+  console.log("PostDetailPage -> post:", post);
   return (
     <>
       <Head>

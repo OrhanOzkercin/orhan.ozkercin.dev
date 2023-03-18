@@ -20,9 +20,22 @@ const PostContent = ({ post }) => {
     },
     blockquote(quote) {
       return (
-        <blockquote className="my-8 border-l border-gray-500 pl-3 text-lg italic leading-9">
+        <blockquote className="my-8 border-l-4  border-sky-700 pl-3 text-lg italic leading-9">
           {quote.children}
         </blockquote>
+      );
+    },
+    hr(hr) {
+      return (
+        <div className="flex justify-center gap-3">
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+          <div className="h-1 w-1 rounded-full bg-sky-700"></div>
+        </div>
       );
     },
     li(li) {

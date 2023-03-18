@@ -18,6 +18,13 @@ const PostContent = ({ post }) => {
     h3(h3) {
       return <h3 className="h3">{h3.children}</h3>;
     },
+    blockquote(quote) {
+      return (
+        <blockquote className="my-8 border-l border-gray-500 pl-3 text-lg italic leading-9">
+          {quote.children}
+        </blockquote>
+      );
+    },
     li(li) {
       return <li className="my-2 before:mr-2 before:h-4 before:w-4 before:content-['👉']">{li.children}</li>;
     },

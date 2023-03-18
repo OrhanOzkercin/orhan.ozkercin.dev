@@ -1,5 +1,6 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
+import DisqusComments from "@/components/disqus";
 import Meta from "@/components/meta";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
 
@@ -19,6 +20,7 @@ const PostDetailPage = ({ post }) => {
         <PostContent post={post} />
         <PostSidebar post={post} />
       </div>
+      <DisqusComments post={post} />
     </>
   );
 };

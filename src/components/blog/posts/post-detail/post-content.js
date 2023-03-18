@@ -4,6 +4,7 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import PostHeader from "./post-header";
 import Image from "next/image";
+import DisqusComments from "@/components/disqus";
 
 const PostContent = ({ post }) => {
   const imagePath = post.coverImage && `/blog/posts/${post.slug}/${post.coverImage}`;
@@ -86,10 +87,12 @@ const PostContent = ({ post }) => {
   };
 
   return (
-    <article className="w-full lg:w-2/3">
-      <PostHeader title={post.title} image={imagePath} date={post.date} readTime={post.readTime} />
-      <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
-    </article>
+    <>
+      <article className="w-full lg:w-2/3">
+        <PostHeader title={post.title} image={imagePath} date={post.date} readTime={post.readTime} />
+        <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
+      </article>
+    </>
   );
 };
 

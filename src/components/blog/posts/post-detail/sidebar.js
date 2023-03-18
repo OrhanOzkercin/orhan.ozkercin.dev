@@ -15,7 +15,7 @@ import {
 
 const PostSidebar = ({ post }) => {
   const shareUrl = `https://orhan.ozkercin.com/blog/posts/${post.slug}`;
-  const quote = `Hey! I just read this awesome article by @orhanozkercin 
+  const quote = `Hey! I just read this awesome article by @orhanozkercin
  ${post.title}`;
   return (
     <aside className="sticky top-8 flex h-fit flex-col gap-3">

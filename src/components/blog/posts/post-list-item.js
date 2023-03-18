@@ -14,7 +14,7 @@ function cutAndAddEllipsis(str) {
   }
 }
 const PostListItem = ({ post }) => {
-  const { title, listImage, excerpt, date, slug, lang } = post;
+  const { title, listImage, excerpt, date, slug, lang, readTime } = post;
 
   const linkPath = `/blog/posts/${slug}`;
 
@@ -24,7 +24,9 @@ const PostListItem = ({ post }) => {
         <div className="custom-border-gray relative mb-2 flex w-full flex-row gap-8 rounded-md border-[.5px] p-8 shadow-md dark:shadow-black/30">
           <div className="">
             <h2 className="h2 mb-1 text-2xl">{title}</h2>
-            <span className="mb-3 inline-block">{formattedDate(date)}</span>
+            <span className="mb-3 inline-block">
+              {formattedDate(date)} - {readTime}
+            </span>
             <p>{cutAndAddEllipsis(excerpt)}</p>
           </div>
           <i className="absolute right-2 top-2">

@@ -12,7 +12,7 @@ export const Navbar = () => {
           src="/orhan-ozkercin.jpg"
           width={100}
           height={100}
-          className="rounded-full border-2 border-gray-500 dark:border-neutral-700"
+          className="hidden rounded-full border-2 border-gray-500 dark:border-neutral-700 sm:inline-block"
         />
         <div className="flex flex-col gap-2">
           <Link href={"/"}>

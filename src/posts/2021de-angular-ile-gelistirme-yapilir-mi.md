@@ -45,8 +45,14 @@ Demem o ki; bu söylem bi noktaya kadar doğru, Angular CLI'ı size tüm ayarlar
 
 Angular kolay değil! "Learning Curve"ü dik gidiyor, bu söylemleri duymuşuzdur. Tamamı doğru :) Angular bir çok yenilikle geliyor, kendine has özellikle geliyor. Öğrenmesi sindirmesi zaman alan kafa karıştırabilecek özellikleri var. Fakat ben olaya şöyle bakıyorum; "Scope, Hoisting, Closure, Context" gibi özellikler de bir hayli kafa karıştırıcı ve anlaması zor konseptler. Bu özelliklere sahip diye JavaScript'e kötü demiyoruz, JavaScript sorunlara bu konsept ve anlayışlarla çözüm bulmuş diyoruz ve hepimiz(!) JavaScript'e bayılıyoruz. En fazla eleştirilen dillerden birisi olmasıyla birlikte en çok kullanılan dil olmasının altında yatan sebep sağladığı kolaylıklar çıkardığı zorluklardan daha ağır basması.
 
-![shows null===0 is false null>0 is false but null>= 0 is true](weird-js.webp)
 
+```js
+
+null == 0 // false
+null > 0 // false
+null >= 0 // true
+
+```
 
 Başlıkta gördüğünüz her şey Angular'ın sunduğu özelliklerden bazıları. Ben tamamında süperim diyemem ama tamamıyla bi şeyler yaptım. Bayağı karmaşık konseptler, anlaması güç noktaları var. Ama bunlarla boğulmak zorunda değilsiniz hemen. Resolverlar hakkında öğrendiklerimi geçen aya kadar bilmiyordum. React ve Vueöğrenmesi Angular'a nazaran daha rahat olduğunu söylüyoruz, ki öyle, fakat işin içine "Best practices, HTTP yönetimi, Routing yönetimi, State yönetimi" gibi konular girince onlarında karmaşıklaştığını göreceksiniz.
 

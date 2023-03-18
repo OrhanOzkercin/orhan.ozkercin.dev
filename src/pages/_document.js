@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="site_name" content="Orhan Özkerçin Personal Website" />
         <meta property="og:url" content="http://orhan.ozkercin.dev" />
         <meta property="og:title" content="Orhan Özkerçin" />

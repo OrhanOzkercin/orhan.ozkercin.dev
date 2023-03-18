@@ -1,4 +1,6 @@
 import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import PostHeader from "./post-header";
 import Image from "next/image";
@@ -27,9 +29,9 @@ const PostContent = ({ post }) => {
             <Image
               src={`/blog/posts/${post.slug}/${image.properties.src}`}
               alt={image.properties.alt}
-              className="w-full"
-              width={500}
-              height={300}
+              className="h-full w-full object-cover"
+              width={700}
+              height={700}
             />
             <figcaption className="mx-auto mt-1 text-center text-xs">{image.properties.title}</figcaption>
           </figure>
@@ -37,12 +39,27 @@ const PostContent = ({ post }) => {
       }
       return <p className="my-8 text-lg leading-9">{paragraph.children}</p>;
     },
-
-    // code(code) {
-    //   const { className, children } = code;
-    //   const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
-    //   return <SyntaxHighlighter style={atomDark} language={language} children={children} />;
-    // },
+    a(link) {
+      return (
+        <a href={link.href} className="text-sky-700 hover:underline" target={"_blank"}>
+          {link.children}
+        </a>
+      );
+    },
+    code(code) {
+      if (code.inline) {
+        return (
+          <code className="rounded-sm bg-gray-200/50 p-1 font-serif  italic dark:bg-neutral-900/30">
+            {code.children[0]}
+          </code>
+        );
+      }
+      return (
+        <SyntaxHighlighter language="javascript" style={atomDark}>
+          {code.children[0]}
+        </SyntaxHighlighter>
+      );
+    },
   };
 
   return (

@@ -1,5 +1,6 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
+import Meta from "@/components/meta";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
 import Head from "next/head";
 
@@ -7,15 +8,15 @@ const PostDetailPage = ({ post }) => {
   console.log("PostDetailPage -> post:", post);
   return (
     <>
-      <Head>
-        <title>{post.title}</title>
-        <meta name="og:title" content={post.title} />
-        <meta name="description" content={post.excerpt} />
-        <meta name="og:url" content={`https://orhan.ozkercin.com/blog/posts/${post.slug}`} />
-        <meta name="og:description" content={post.excerpt} />
-        <meta name="og:image" content={`https://orhan.ozkercin.com/${post.image}`} />
+      <Meta
+        title={post.title}
+        description={post.excerpt}
+        url={`https://orhan.ozkercin.com/blog/posts/${post.slug}`}
+        image={post.image}
+      >
         <meta name="author" content="Orhan Özkerçin" />
-      </Head>
+      </Meta>
+
       <div className="flex flex-col gap-5 md:flex-row">
         <PostContent post={post} />
         <PostSidebar post={post} />

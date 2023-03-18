@@ -7,7 +7,7 @@ export const DefaultLayout = ({ children }) => {
   return (
     <div className="container mx-auto pt-12">
       <Header />
-      <main className={`${rubik.className}`}>{children}</main>
+      <main className={`${rubik.className} mt-20`}>{children}</main>
       <Footer />
     </div>
   );

@@ -10,10 +10,13 @@ const PostContent = ({ post }) => {
 
   const customRenderers = {
     h1(h1) {
-      return <h1 className="text-4xl font-bold ">{h1.children}</h1>;
+      return <h1 className="h1 ">{h1.children}</h1>;
     },
     h2(h2) {
       return <h2 className="h2">{h2.children}</h2>;
+    },
+    h3(h3) {
+      return <h3 className="h3">{h3.children}</h3>;
     },
     li(li) {
       return <li className="my-2 before:mr-2 before:h-4 before:w-4 before:content-['👉']">{li.children}</li>;
@@ -63,7 +66,7 @@ const PostContent = ({ post }) => {
   };
 
   return (
-    <article className="w-full md:w-2/3">
+    <article className="w-full lg:w-2/3">
       <PostHeader title={post.title} image={imagePath} />
       <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
     </article>

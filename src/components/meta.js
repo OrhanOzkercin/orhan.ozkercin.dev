@@ -10,7 +10,7 @@ const Meta = (props) => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+      <link rel="icon" href="/favicon.ico" />
       <title key="title">{title || defaultTitle}</title>
       <meta name="site_name" content="Orhan Özkerçin Personal Website" />
       <meta key="description" name="description" content={description || defaultDescription} />

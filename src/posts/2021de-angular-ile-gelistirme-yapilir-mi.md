@@ -49,7 +49,7 @@ Angular kolay değil! "Learning Curve"ü dik gidiyor, bu söylemleri duymuşuzdu
 ```js
 
 null == 0 // false
-null > 0 // false
+null > 0  // false
 null >= 0 // true
 
 ```

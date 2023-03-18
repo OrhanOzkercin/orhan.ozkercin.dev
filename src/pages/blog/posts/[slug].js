@@ -2,10 +2,8 @@ import PostContent from "@/components/blog/posts/post-detail/post-content";
 import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
 import Meta from "@/components/meta";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
-import Head from "next/head";
 
 const PostDetailPage = ({ post }) => {
-  console.log("PostDetailPage -> post:", post);
   return (
     <>
       <Meta
@@ -17,7 +15,7 @@ const PostDetailPage = ({ post }) => {
         <meta name="author" content="Orhan Özkerçin" />
       </Meta>
 
-      <div className="flex flex-col gap-5 md:flex-row">
+      <div className="flex flex-col gap-5 lg:flex-row">
         <PostContent post={post} />
         <PostSidebar post={post} />
       </div>

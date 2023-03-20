@@ -29,10 +29,10 @@ const PostListItem = ({ post }) => {
             fill={true}
           />
         </div>
-        <div className="px-3 py-5">
+        <div className="px-5 py-4">
           <h2 className="h2 mb-1">{title}</h2>
           <DateReadTime date={date} timeToRead={readTime} />
-          <p className="my-5 font-normal">{cutAndAddEllipsis(excerpt)}</p>
+          <p className="my-5 px-1 font-normal">{cutAndAddEllipsis(excerpt)}</p>
         </div>
       </Link>
     </li>

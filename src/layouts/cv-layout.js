@@ -1,4 +1,4 @@
-import { Header } from "@/layouts/navbar/cv-navbar";
+import { Header } from "@/layouts/header/index.js";
 import { Rubik } from "next/font/google";
 import Footer from "./footer";
 

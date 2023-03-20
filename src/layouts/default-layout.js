@@ -1,7 +1,6 @@
 import { Rubik } from "next/font/google";
 import Footer from "./footer";
-import { Header } from "./navbar/cv-navbar";
-import { MainNavbar } from "./navbar/main-navbar";
+import { Header } from "./header/index.js";
 
 const rubik = Rubik({ subsets: ["latin"] });
 export const DefaultLayout = ({ children }) => {

@@ -64,7 +64,7 @@ export const Header = () => {
               🙋‍♂️ CV
             </Link>
           </li>
-          <li className="absolute bottom-6 -left-10 sm:left-auto sm:bottom-0 sm:-right-14">
+          <li className="max-sm:absolute max-sm:bottom-6 max-sm:-left-10 ">
             <ThemeSwitch />
           </li>
         </ul>

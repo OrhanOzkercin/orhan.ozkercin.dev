@@ -18,10 +18,10 @@ export const Header = () => {
         />
         <div className="flex w-full  flex-col justify-between ">
           <Link href={"/"}>
-            <h1 className="h1 mb-0 text-2xl text-light-text dark:text-dark-text">Orhan Özkerçin</h1>
+            <h1 className="h1 mb-0 text-xl text-light-text dark:text-dark-text sm:text-2xl">Orhan Özkerçin</h1>
           </Link>
           <div className="flex flex-col gap-2">
-            <a href="mailto:orhan@ozkercin.dev" target="_blank">
+            <a href="mailto:orhan@ozkercin.dev" target="_blank" className="text-sm sm:text-base">
               orhan@ozkercin.dev
             </a>
             <div className="flex gap-2">
@@ -29,7 +29,7 @@ export const Header = () => {
                 <Twitter />
               </a>
               <a aria-label="Github profile link" href="https://github.com/OrhanOzkercin" target="_blank">
-                <Github className="cursor" />
+                <Github />
               </a>
               <a aria-label="Linkedin profile link" href="https://www.linkedin.com/in/orhanozkercin/" target="_blank">
                 <Linkedin />
@@ -45,22 +45,28 @@ export const Header = () => {
         </div>
       </div>
       <nav className="mt-0">
-        <ul className="relative flex flex-col gap-1 sm:flex-row sm:gap-8">
+        <ul className="text relative flex flex-col gap-1 sm:flex-row sm:gap-8">
           <li>
-            <Link className={`text-lg font-semibold ${router.pathname === "/" && "text-primary"}`} href={"/"}>
+            <Link
+              className={`text-sm font-semibold sm:text-lg ${router.pathname === "/" && "text-primary"}`}
+              href={"/"}
+            >
               🏠 Homepage
             </Link>
           </li>
           <li>
             <Link
-              className={`text-lg font-semibold ${router.pathname.includes("blog") && "text-primary"}`}
+              className={`text-sm font-semibold sm:text-lg ${router.pathname.includes("blog") && "text-primary"}`}
               href={"/blog/posts"}
             >
               📝 Blog
             </Link>
           </li>
           <li>
-            <Link className={`text-lg font-semibold ${router.pathname === "/about" && "text-primary"}`} href={"/about"}>
+            <Link
+              className={`text-sm font-semibold sm:text-lg ${router.pathname === "/about" && "text-primary"}`}
+              href={"/about"}
+            >
               🙋‍♂️ CV
             </Link>
           </li>

@@ -5,8 +5,8 @@ import Link from "next/link";
 function HomePage() {
   return (
     <>
-      <AnimatedHeading text={"Hellooo there!"} className={"text-3xl font-thin leading-tight sm:text-7xl "} />
-      <AnimatedHeading text={"I'm Orhan"} className={`mt-8 mb-12 text-2xl font-semibold  leading-tight sm:text-6xl `} />
+      <AnimatedHeading text={"Hellooo there!"} className={" text-4xl font-thin leading-tight sm:text-7xl "} />
+      <AnimatedHeading text={"I'm Orhan"} className={`mt-8 mb-12 text-3xl font-semibold  leading-tight sm:text-6xl `} />
 
       <p className="w-full text-sm sm:w-4/5 sm:text-lg">
         I work as a frontend developer. I love working with JavaScript and building things using it. Apart from that,

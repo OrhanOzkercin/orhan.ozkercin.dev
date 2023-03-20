@@ -16,9 +16,9 @@ export const MainNavbar = () => {
           height={100}
           className="hidden rounded-full border-2 border-gray-500 dark:border-neutral-700 sm:inline-block"
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex w-full flex-row items-center gap-2  sm:flex-col sm:items-start sm:justify-between">
           <Link href={"/"}>
-            <h1 className="h1 mb-0 text-light-text dark:text-dark-text">Orhan Özkerçin</h1>
+            <h1 className="h1 mb-0 text-light-text dark:text-dark-text max-xl:text-lg">Orhan Özkerçin</h1>
           </Link>
 
           <a href="mailto:orhan@ozkercin.dev" target="_blank">
@@ -53,10 +53,9 @@ export const MainNavbar = () => {
           </ul>
         </div>
       </div>
-
       <nav className="mt-8">
-        <ul className="flex flex-col gap-3">
-          <li className="ml-auto mr-5 -mt-14 mb-12">
+        <ul className="flex flex-row gap-3 sm:flex-col">
+          <li className="ml-auto">
             <ThemeSwitch />
           </li>
           <li>

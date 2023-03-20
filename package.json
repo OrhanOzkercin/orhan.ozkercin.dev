@@ -21,7 +21,8 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
     "react-syntax-highlighter": "^15.5.0",
-    "reading-time": "^1.5.0"
+    "reading-time": "^1.5.0",
+    "sass": "^1.59.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

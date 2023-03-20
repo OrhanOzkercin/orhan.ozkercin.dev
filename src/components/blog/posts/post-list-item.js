@@ -1,36 +1,38 @@
-import { TrFlag, UsFlag } from "@/assets/icons";
-import { formattedDate } from "@/lib/date/formating-util";
+import Image from "next/image";
 import Link from "next/link";
+import { DateReadTime } from "./date-read-time";
 
 function cutAndAddEllipsis(str) {
   var words = str.split(" ");
 
-  if (words.length > 20) {
-    var trimmedString = words.slice(0, 20).join(" ") + "...";
+  if (words.length > 30) {
+    var trimmedString = words.slice(0, 30).join(" ") + "...";
     return trimmedString;
   } else {
     return str;
   }
 }
 const PostListItem = ({ post }) => {
-  const { title, listImage, excerpt, date, slug, lang, readTime } = post;
+  const { title, listImage, excerpt, date, slug, lang, readTime, cover } = post;
 
   const linkPath = `/blog/posts/${slug}`;
+  const coverPath = `/blog/posts/${slug}/${cover}`;
 
   return (
-    <li className="lg:h-56">
-      <Link href={linkPath}>
-        <div className="custom-border-gray relative mb-2 flex w-full flex-row gap-8 rounded-md border-[.5px] p-8 shadow-md dark:shadow-black/30">
-          <div className="">
-            <h2 className="h2 mb-1 text-2xl">{title}</h2>
-            <span className="mb-3 inline-block">
-              {formattedDate(date)} - {readTime}
-            </span>
-            <p>{cutAndAddEllipsis(excerpt)}</p>
-          </div>
-          <i className="absolute right-2 top-2">
-            {lang === "en" ? <UsFlag className="h-6 w-6" /> : <TrFlag className=" h-6 w-6" />}
-          </i>
+    <li className="rounded-xl bg-white shadow-sm transition-all ease-in-out hover:scale-105 hover:duration-300 dark:bg-gray-700">
+      <Link className=" flex h-full w-full flex-col" href={linkPath}>
+        <div className="relative h-60">
+          <Image
+            className="rounded-tr-xl rounded-tl-xl object-cover object-center ring-offset-dark-text"
+            src={coverPath}
+            alt={title}
+            fill={true}
+          />
+        </div>
+        <div className="px-3 py-5">
+          <h2 className="h2 mb-1">{title}</h2>
+          <DateReadTime date={date} timeToRead={readTime} />
+          <p className="my-5 font-normal">{cutAndAddEllipsis(excerpt)}</p>
         </div>
       </Link>
     </li>

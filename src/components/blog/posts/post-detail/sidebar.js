@@ -1,22 +1,7 @@
 import { Github, Hackerrank, Linkedin, Medium, Twitter } from "@/assets/icons";
 import Image from "next/image";
-import {
-  TelegramShareButton,
-  TelegramIcon,
-  TwitterShareButton,
-  TwitterIcon,
-  LinkedinShareButton,
-  LinkedinIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
-  EmailShareButton,
-  EmailIcon,
-} from "next-share";
 
 const PostSidebar = ({ post }) => {
-  const shareUrl = `https://orhan.ozkercin.com/blog/posts/${post.slug}`;
-  const quote = `Hey! I just read this awesome article by @orhanozkercin
- ${post.title}`;
   return (
     <aside className="sticky top-8 flex h-fit flex-col gap-3">
       <div className="flex flex-col gap-2">
@@ -50,24 +35,6 @@ const PostSidebar = ({ post }) => {
               </a>
             </div>
           </div>
-        </div>
-        <h2 className="h2 text-md mb-2 mt-4">Share blog</h2>
-        <div className="flex gap-3">
-          <WhatsappShareButton url={shareUrl} title={quote}>
-            <WhatsappIcon size={32} round />
-          </WhatsappShareButton>
-          <TelegramShareButton url={shareUrl} title={quote}>
-            <TelegramIcon size={32} round />
-          </TelegramShareButton>
-          <TwitterShareButton url={shareUrl} title={quote}>
-            <TwitterIcon size={32} round />
-          </TwitterShareButton>
-          <LinkedinShareButton url={shareUrl}>
-            <LinkedinIcon size={32} round />
-          </LinkedinShareButton>
-          <EmailShareButton url={shareUrl} subject={post.title} body={quote}>
-            <EmailIcon size={32} round />
-          </EmailShareButton>
         </div>
       </div>
     </aside>

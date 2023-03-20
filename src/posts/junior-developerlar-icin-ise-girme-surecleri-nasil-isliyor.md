@@ -4,9 +4,8 @@
   author: "Orhan Özkerçin"
   excerpt: "Junior bir developer olarak işe girmek için ne gibi senaryolarla karşılaşabilirsiniz? Bu yazıda benim tecrübelerimden bahsederek size yardımcı olmaya çalışacağım."
   lang: "tr"
+  cover: "cover.jpeg"
 ---
-
-![children](children.webp)
 
 Çok amiyane bir tabir vardır 'Evin küçüğü olacağına kapının köpeği ol' diye. Hah, tam olarak özetler 'Junior Developer'ların halini :) Bu tüm dünyada böyle midir bilmiyorum fakat Türkiye'de ben biraz böyle olduğunu düşünüyorum. Yakın zamanda bir iş değiştirme durumum oldu ve çok büyük firmalar da dahil olmak üzere birçok firma ile görüşmeler gerçekleştirdim. Bu görüşmelerde nasıl tecrübeler yaşadım bunlardan bahsedeceğim ve naçizane birkaç tavsiye vereceğim bu konuda. Hayatımda ilk kez iş değiştirme durumu ile karşı karşıya kaldım ve benim de çok yabancı olduğum bir süreç geçirdim. Siz de benimle benzer durumdaysanız umarım derdinize tercüman olabilirim.
 
@@ -30,7 +29,6 @@ Ben işimi netleştirmeden şirketten ayrıldım, biraz riskli bir hareketti. Yu
 
 ![wall-phones](wall-phones.jpeg)
 
-
 En zorlayıcı senaryolardan biri oldu benim için. Bir kaç ikilemde kalabiliyorsunuz. Çalıştığınız için görüşmeleri yapmak zorlayıcı hale geliyor. Eğer işten ayrılacağınızı dile getirdiyseniz yasal olarak iş aramak için izniniz oluyor fakat tabii işten ayrılmak istediğinizi ilk görüşmeleri yapacak iken söylemeniz çok akıllıca olmayabilir.
 
 Ben şöyle bir yol izledim, bazı firmaların çalışma saatleri benim çalışma saatimden bir saat önce başlıyordu, bazıları ise esnek saatlerde çalışıyordu. Bu durumda mümkün olduğunca benim çalışma saatlerimin dışında ayarlamaya çalıştım. Bu mümkün değilse, yemek aralarında görüşme ayarlamaya çalıştım. Fakat bu her zaman mümkün olmadı maalesef. Bu noktada firmaya görüşmeye gideceğimi ve izin istediğimi direkt olarak söyledim. Tabii ayrılmak istediğimi öncesinde söylemiştim.
@@ -40,7 +38,6 @@ Ben şöyle bir yol izledim, bazı firmaların çalışma saatleri benim çalı�
 ### Yollanan taskler çook vakit alıyor!
 
 ![calendar time](time.jpeg)
-
 
 "Hayır!" çok kuvvetli bir sözcük, ayrıca söylemesi de bir hayli zor bence. Benim hayır demekte en çok zorlandığım kişi ise kendim oluyor genelde. Peki konumuzla ne alakası var. Bu herkes için aynı şekilde olmayabilir fakat ben kendi başımdan geçen şekilde ele alacağım.
 
@@ -64,7 +61,6 @@ Görece daha küçük firmaların süreçleri ise daha samimi gerçekleşiyor di
 
 ![man-with-computer](man-with-computer.jpeg)
 
-
 İnsan kaynakları görüşmeleri genelde samimi, kendimi rahat hissettiğim görüşmeler oldu. Özellikle tecrübeli insan kaynakları çalışanları konuşmanın tansiyonunu düşürüyor ve samimi bir sohbet havasına sokuyor. Yaptığınız işleri, tecrübelerinizi dürüst bir şekilde anlatmanız bekleniyor. Bazı firmalar bu görüşmelerin bir kısmını İngilizce konuşarak yürütüyor. Birkaç firmada bu görüşmelere katılan insan kaynakları sayısı iki kişi oluyor, bir kişi gözlemci bir kişi ise sizle mülakat yapan kişi oluyor.
 
 Eğer iş değiştiriyorsanız sebebi mutlaka soruluyor, sorulmadığı hiç olmadı bende. Burada benim naçizane tavsiyem mevcut şirketinizle ilgili kötü sözler sarf etmemeniz, orada kazandığınız tecrübe ve deneyimlerinizi unutmadan hoş sözlerle anmanız bence daha hoş bir davranış olur. Sonrasında motivasyonunuzu ve sebeplerinizi açıklamanız güzel bir şekilde yönetmenizi sağlayacaktır.
@@ -86,7 +82,6 @@ Bu görüşmelerde naçizane tavsiyem gülümsemeniz. Siz kariyeriniz için güz
 ### Task Süreci
 
 ![coding-guy](coding-guy.jpeg)
-
 
 Bu süreç benim için çok yorucu oldu. Eğer çalışıyorsanız aktif olarak bu süreçteki zaman yönetimi hayati oluyor. Yollanan taskler genelde çok zorlayıcı taskler olmuyor. Frontend pozisyonları için genelde bir framework kullanarak bir state yönetmeyi hedefleyen alışılagelmiş tarzda uygulamalar task olarak yollanıyor. Genelde "React" ile yazmanız firmanın tercihi oluyor onu da belirteyim. React ve Redux bilen ve kullanan adayların şansının bu pozisyon için yüksek olduğunu belirtebilirim diğer adaylara göre. Ben tamamını Angular ile yazdım 🙄 Bazı firmalar ise css ağırlıklı taskler yolladılar. Burada sorun şu oluyor genelde; task yollandıktan sonra 3–5 gün içerisinde çözüp geri yollaman gerekiyor fakat bir birine yakın zamanlarda taskler yollanırsa size bunları yönetmek zor olabilir, ben bu sorunu yaşadım. Bir yandan mesai sonrası görüşme yapmaya çalıştığım için vakit sorununu ciddi şekilde yaşadım.
 

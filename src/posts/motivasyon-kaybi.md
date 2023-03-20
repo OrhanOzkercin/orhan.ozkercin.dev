@@ -4,8 +4,8 @@
   author: "Orhan Özkerçin"
   excerpt: "İş hayatının getirdiği stres ve yorgunluk sonrasında motivasyon kaybı yaşamak çok normal bir durum. Bu yazıda motivasyon kaybı yaşadığım durumu ve bunun sonuçlarını anlatmaya çalıştım."
   lang: "tr"
+  cover: "cover.jpeg"
 ---
-
 
 İşte yoruluyorum sonrasında çalışacak enerji bulamıyorum. 6 olsa da bilgisayarı kapatsam. Cuma geldi, hafta sonu 'yeyy'… Bu durumlar uzadıkça uzar hepinizin malumu. Duyduklarına yabancı olmayan ve bu durumu artık alışkanlık haline getirmeye başlamış, hayatını 9–6 düzenine göre kurmaya başlayan, işte yaptıklarının üzerine koyacak enerjiyi artık bulamadığını söyleyen kişilerden biri olarak bu durumların etkilerini ve sonuçlarını yazmaya gayret ettim bu yazımda. Hayatımda sorunlar açacağına inandığım ve bu alışkanlıklarımdan kurtulmak için son zamanlarda ciddi bir çaba gösteriyorum.
 

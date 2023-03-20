@@ -4,9 +4,10 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import PostHeader from "./post-header";
 import Image from "next/image";
+import GisqusComments from "@/components/gisqus";
 
-const PostContent = ({ post }) => {
-  const imagePath = post.coverImage && `/blog/posts/${post.slug}/${post.coverImage}`;
+const PostContent = ({ post, className }) => {
+  const coverImagePath = post.cover && `/blog/posts/${post.slug}/${post.cover}`;
 
   const customRenderers = {
     h1(h1) {
@@ -87,9 +88,15 @@ const PostContent = ({ post }) => {
 
   return (
     <>
-      <article className="w-full lg:w-2/3">
-        <PostHeader title={post.title} image={imagePath} date={post.date} readTime={post.readTime} />
+      <article className={`w-full ${className}`}>
+        <PostHeader title={post.title} date={post.date} readTime={post.readTime} slug={post.slug} />
+        <div className="relative h-[40vh]">
+          {coverImagePath && (
+            <Image className="rounded-xl object-cover object-center" src={coverImagePath} alt={post.title} fill />
+          )}
+        </div>
         <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
+        <GisqusComments />
       </article>
     </>
   );

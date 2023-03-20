@@ -2,7 +2,8 @@
   title: "2021'de Angular İle Geliştirme Yapılır Mı?"
   date: "2021-04-13"
   author: "Orhan Özkerçin"
-  excerpt: "Angular frameworkü ile geliştirme yapmak 2021 yılında hala mantıklı mı? Avantajları ve dezavantajları neler?"
+  cover: "cover.jpeg"
+  excerpt: "Angular frameworkü ile geliştirme yapmak 2021 yılında hala mantıklı mı? Avantajları ve dezavantajları neler? Angular anlatıldığı gibi ölen, biten bir framework mü?"
   lang: "tr"
 ---
 
@@ -19,7 +20,7 @@ Bunları yazarken Angular savunucusu olarak gözükmek istemem ama lanse edildi�
 
 Her Angular yazısında ve videosunda gördüğünüz bir şeyi ben de âdeti bozmadan yazayım. "AngularJS" ile Angular bir birinden tamamen farklı iki framework. Detayları çokça kez yazıldı, ben değinmeyeceğim ki AngularJS ile ilgili çok bir bilgim de yok, isteyenler [buradan](https://stackify.com/angular-vs-angularjs-differences-between-angular-and-angularjs/) bakabilir. Bir de Angular 2,3,4,5… konusundan bahsedeyim, bu durum Angular üzerine yapışmış ve yeni başlayacak kişiler için akılda çok soru işareti bırakan bir durum. Genel olarak 2,3,4,5… versiyon numaralarının çok büyük bir önemi yok. Angular her 6 ayda bir sürüm güncellemesi çıkartıyor ve bu versiyon numaraları değişiyor. Bu sizin için çok büyük bir önem arz etmiyor. Angular stabil bir framework ve versiyon geçişlerinde çok köklü değişiklikler yapılmıyor. Bu algıyı yıkmak için Angular Community'si "It's just Angular" sloganını ortaya çıkardı zaten. Türkçe çevirisi "Sadece Angular".
 
-Benim izlediğim bir kaç Youtube videosunda ayrıca [StackOverFlow anketi](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-web-frameworks-dreaded2) referans verilerek Angular'ın en sevilmeyen framework olduğundan bahsediliyor. Bu yanlış bilgilendirme olmakla birlikte yukarıda bahsettiğim AngularJS ve Angular farkından kaynaklanıyor. "Most Dreaded Web Framework" kategorisinde birinci olan framework ***AngularJS***. Daha önce bahsettiğim gibi Angular ile bir ilişkisi yok(İlişkisi yok derken bir birinden tamamen farklı olan iki framework). AngularJS çıktığı dönemde çok büyük bir sükse yaratmış fakat günümüzdeki isteklere cevap veremeyen bir framework haline gelmiş durumda, öte yandan Angular bu konuda oldukça başarılı ve yenilikçi diyebilirim.
+Benim izlediğim bir kaç Youtube videosunda ayrıca [StackOverFlow anketi](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-web-frameworks-dreaded2) referans verilerek Angular'ın en sevilmeyen framework olduğundan bahsediliyor. Bu yanlış bilgilendirme olmakla birlikte yukarıda bahsettiğim AngularJS ve Angular farkından kaynaklanıyor. "Most Dreaded Web Framework" kategorisinde birinci olan framework **_AngularJS_**. Daha önce bahsettiğim gibi Angular ile bir ilişkisi yok(İlişkisi yok derken bir birinden tamamen farklı olan iki framework). AngularJS çıktığı dönemde çok büyük bir sükse yaratmış fakat günümüzdeki isteklere cevap veremeyen bir framework haline gelmiş durumda, öte yandan Angular bu konuda oldukça başarılı ve yenilikçi diyebilirim.
 
 ![Just Angular text](just-angular.webp)
 
@@ -45,13 +46,10 @@ Demem o ki; bu söylem bi noktaya kadar doğru, Angular CLI'ı size tüm ayarlar
 
 Angular kolay değil! "Learning Curve"ü dik gidiyor, bu söylemleri duymuşuzdur. Tamamı doğru :) Angular bir çok yenilikle geliyor, kendine has özellikle geliyor. Öğrenmesi sindirmesi zaman alan kafa karıştırabilecek özellikleri var. Fakat ben olaya şöyle bakıyorum; "Scope, Hoisting, Closure, Context" gibi özellikler de bir hayli kafa karıştırıcı ve anlaması zor konseptler. Bu özelliklere sahip diye JavaScript'e kötü demiyoruz, JavaScript sorunlara bu konsept ve anlayışlarla çözüm bulmuş diyoruz ve hepimiz(!) JavaScript'e bayılıyoruz. En fazla eleştirilen dillerden birisi olmasıyla birlikte en çok kullanılan dil olmasının altında yatan sebep sağladığı kolaylıklar çıkardığı zorluklardan daha ağır basması.
 
-
 ```js
-
-null == 0 // false
-null > 0  // false
-null >= 0 // true
-
+null == 0; // false
+null > 0; // false
+null >= 0; // true
 ```
 
 Başlıkta gördüğünüz her şey Angular'ın sunduğu özelliklerden bazıları. Ben tamamında süperim diyemem ama tamamıyla bi şeyler yaptım. Bayağı karmaşık konseptler, anlaması güç noktaları var. Ama bunlarla boğulmak zorunda değilsiniz hemen. Resolverlar hakkında öğrendiklerimi geçen aya kadar bilmiyordum. React ve Vueöğrenmesi Angular'a nazaran daha rahat olduğunu söylüyoruz, ki öyle, fakat işin içine "Best practices, HTTP yönetimi, Routing yönetimi, State yönetimi" gibi konular girince onlarında karmaşıklaştığını göreceksiniz.
@@ -75,17 +73,18 @@ RxJS Angular CLI kurulumu yaparsanız eğer varsayılan olarak kurulan bir küt�
 RxJS kütüphanesi daha önce `observer pattern` ile uğraşmamış kişiler için(Benim gibi) zor gelebilir. Fakat `state management` yapabildiğimiz, datayı çok kolay bir şekilde manipüle edebildiğimiz çok yetenekli bir kütüphane olduğunu söyleyebilirim.
 
 ## 5- Düzen, Nizam
+
 Angular'ın hem sevilen hem de hiç sevilmeyen bir özelliği olan neyi nerede yapacağınızı söyleyen bir durumu var. Şöyle ki;
 
 Size klasörlerinizi nasıl isimlendireceğinizi, logic'iğinizi nereye koyacağınızı, datanızı nasıl tutacağınızı ve nerede tutacağınızı söyleyen kendine özgü bir düzeni var. [MVC pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) ile kurguladığı bir yapısı var. Bu durumun benim üzerimde olumsuz bir etkisi olmadı fakat esnekliğin az olduğu eleştirileri de bulunuyor. Bunun iyi ya da kötü olduğunu söyleyecek tecrübe de değilim, fakat ben `Interfaceler` ile modelimi belirleyip, servislerde logic'iğimi yazıp componentde de dataları gösterme olayına alıştım, seviyorum diyebilirim.
 
 ## Peki Angular bu kadar 'müthiş' niye grafikler öyle demiyor?
+
 Harika bir soru, öyle değil mi? Ben ilk Angular yazacağımı öğrendiğimde baya üzülmüştüm. Öyle zannediyordum ki artık kimse Angular yazmıyor. Fakat grafikler her ne kadar Angular için React kadar yüksek olmasa da çok büyük kitleler tarafından kullanılan bir framework. Ayrıca büyük bir topluluk desteği var aynı React ve Vue gibi (Vue'yi hatırladığım iyi oldu 😅).
 
 Hala grafiklerin neden Angular için çok yukarı yönlü olmadığını söylemedim, çünkü bilmiyorum 🙈
 
 ![Angular ecosytem](angular-products.webp)
-
 
 Her ne kadar Angular'da olan şeylerin olmasının çok mantıklı sebepleri olduğunu ve olmasının aslında iyi bir şey olduğunu söylesem de, Angular diğer frameworklere göre biraz daha karmaşık ve zorlayıcı olabiliyor. Bir çok farklı konuda çözüm üretebiliyor olması, baktığınız açıya göre olumsuz bir durum olabiliyor.
 

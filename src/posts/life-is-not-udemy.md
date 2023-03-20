@@ -4,6 +4,7 @@
   author: "Orhan Özkerçin"
   excerpt: "If you are trying to learn how to programing, you may bought a course on Udemy. But problem is are you buying another one before finish first one"
   lang: "en"
+  cover: "cover.jpeg"
 ---
 
 First of all this is my first attempt to write a blog. Probably there will be some English type mistakes and grammar mistakes, I apologize for that.
@@ -13,7 +14,6 @@ If I want to mention about myself; my name is Orhan and I’m living in Izmir, T
 Almost 8 months ago I started to learn web programming which I’ll cover my adventure in the future blogs. With this path I’ve learned several big things. Today I’ll mention about one of them.
 
 ![Udemy](cover.webp)
-
 
 If you’re interested in learning programming you probably heard Udemy before. Udemy is video tutorial platform includes lots of different topics and tutorials about them. I’ve learned tons of things from this site like millions of people. I strongly recommend it if you are interested in programming.
 

@@ -1,13 +1,13 @@
 import Giscus from "@giscus/react";
 import { useTheme } from "next-themes";
 const GisqusComments = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const getTheme = () => {
     if (theme === "dark") {
-      return "dark_protanopia";
+      return "dark_dimmed";
     } else {
-      return "light_protanopia";
+      return "light";
     }
   };
 

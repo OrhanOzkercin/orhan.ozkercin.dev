@@ -1,16 +1,16 @@
-import { formattedDate } from "@/lib/date/formating-util";
-import Image from "next/image";
+import ShareSocial from "../../share";
+import { DateReadTime } from "../date-read-time";
 
 const PostHeader = (props) => {
-  const { title, image, date, readTime } = props;
+  const { title, date, readTime, slug } = props;
 
   return (
-    <header>
-      <h1 className="mb-4 text-4xl font-semibold text-light-text dark:text-dark-text">{title}</h1>
-      {image && <Image src={image} alt={title} width={500} height={250} />}
-      <span className="inline-block ">
-        {formattedDate(date)} - {readTime}
-      </span>
+    <header className="relative">
+      <h1 className="h1 mb-2">{title}</h1>
+      <section className="mb-2 flex items-center justify-between gap-2">
+        <DateReadTime date={date} timeToRead={readTime} />
+        <ShareSocial slug={slug} title={title} />
+      </section>
     </header>
   );
 };

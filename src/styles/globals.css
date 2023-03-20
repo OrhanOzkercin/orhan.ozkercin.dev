@@ -4,17 +4,24 @@
 
 @layer components {
   .h1 {
-    @apply mb-10 text-4xl font-bold text-light-text dark:text-dark-text;
+    @apply mb-6 text-4xl font-bold text-light-text dark:text-dark-text;
   }
   .h2 {
-    @apply mb-8 text-2xl font-bold text-light-text dark:text-dark-text;
+    @apply mb-4 text-2xl font-bold text-light-text dark:text-dark-text;
   }
   .h3 {
-    @apply mb-6 text-xl font-bold text-light-text dark:text-dark-text;
+    @apply mb-3 text-xl font-bold text-light-text dark:text-dark-text;
   }
 
-  .custom-border-gray {
-    @apply border-gray-200 dark:border-black/30;
+  .container-inner {
+    @apply mx-auto w-full max-w-5xl;
+  }
+
+  .btn-primary {
+    @apply rounded-sm border-0  px-14 py-4 font-bold tracking-widest text-primary shadow-primary-button transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply rounded-sm border-0  px-14 py-4 font-bold tracking-widest text-secondary shadow-secondary-button transition-colors duration-200;
   }
 }
 
@@ -23,7 +30,7 @@ body {
 }
 
 .dark body {
-  @apply bg-neutral-800 text-gray-400;
+  @apply bg-neutral-800 text-gray-300;
 }
 
 a {
@@ -32,4 +39,137 @@ a {
 
 li {
   list-style: none;
+}
+
+img.me {
+  height: auto;
+  filter: drop-shadow(10px 0 1.75rem rgb(14, 13, 13));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center bottom,
+    center top,
+    color-stop(0, rgba(0, 0, 0, 0)),
+    color-stop(0.5, rgba(0, 0, 0, 1))
+  );
+}
+
+/* ----------------------------- Behavior Rules ----------------------------- */
+
+::selection {
+  @apply bg-yellow-700 text-white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  @apply bg-yellow-700 text-white;
+}
+
+/* -------------------------------- Animation ------------------------------- */
+.animate-fade {
+  animation: fade 200ms linear;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
 }

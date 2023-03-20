@@ -8,3 +8,6 @@ export { ExternalLink } from "./external-link.js";
 export { Medium } from "./medium.js";
 export { TrFlag } from "./tr-flag.js";
 export { UsFlag } from "./us-flag.js";
+export { Telegram } from "./telegram.js";
+export { Whatsapp } from "./whatsapp.js";
+export { Email } from "./email.js";

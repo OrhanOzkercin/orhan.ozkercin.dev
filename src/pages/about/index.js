@@ -18,4 +18,5 @@ const About = ({ className }) => {
   );
 };
 
+About.Layout = "cv";
 export default About;

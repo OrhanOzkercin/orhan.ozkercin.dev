@@ -14,9 +14,9 @@ export const MainNavbar = () => {
           src="/orhan-ozkercin.jpg"
           width={100}
           height={100}
-          className="hidden rounded-full border-2 border-gray-500 dark:border-neutral-700 sm:inline-block"
+          className="hidden rounded-full border-2 border-gray-500 dark:border-neutral-700 xl:inline-block"
         />
-        <div className="flex w-full flex-row items-center gap-2  sm:flex-col sm:items-start sm:justify-between">
+        <div className="flex w-full flex-row items-center gap-2  xl:flex-col xl:items-start xl:justify-between">
           <Link href={"/"}>
             <h1 className="h1 mb-0 text-light-text dark:text-dark-text max-xl:text-lg">Orhan Özkerçin</h1>
           </Link>
@@ -54,10 +54,7 @@ export const MainNavbar = () => {
         </div>
       </div>
       <nav className="mt-8">
-        <ul className="flex flex-row gap-3 sm:flex-col">
-          <li className="ml-auto">
-            <ThemeSwitch />
-          </li>
+        <ul className="flex flex-row gap-3 xl:flex-col">
           <li>
             <Link className={`text-lg font-semibold ${router.pathname === "/" && "text-primary"}`} href={"/"}>
               🏠 Homepage

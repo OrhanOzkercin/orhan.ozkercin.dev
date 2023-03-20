@@ -1,8 +1,7 @@
 import Meta from "@/components/meta";
 import { CvLayout } from "@/layouts/cv-layout";
 import { DefaultLayout } from "@/layouts/default-layout";
-import "@/styles/globals.css";
-import "@/styles/utils.scss";
+import "@/styles/globals.scss";
 import { ThemeProvider } from "next-themes";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 

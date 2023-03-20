@@ -1,6 +1,7 @@
 const AnimatedHeading = ({ text, className, animateContainter = false }) => {
   const word = text.split("");
-  const classNames = `h1 inline-block cursor-default bg-clip-text text-6xl leading-tight ${className}`;
+  let classNames = ` inline-block bg-clip-text text-6xl leading-tight ${className}`;
+
   function onAnimationEnd(e) {
     const element = e.target;
     element.classList.remove("animated");

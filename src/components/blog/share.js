@@ -8,7 +8,7 @@ import {
 } from "next-share";
 
 const ShareSocial = ({ slug, title }) => {
-  const shareUrl = `https://orhan.ozkercin.com/blog/posts/${slug}`;
+  const shareUrl = `https://orhan.ozkercin.dev/blog/posts/${slug}`;
   const quote = `Hey! I just read this awesome article by @orhanozkercin
  ${title}`;
   return (

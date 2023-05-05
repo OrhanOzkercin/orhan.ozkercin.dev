@@ -5,6 +5,7 @@
   excerpt: "If you are trying to learn how to programing, you may bought a course on Udemy. But problem is are you buying another one before finish first one"
   lang: "en"
   cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 First of all this is my first attempt to write a blog. Probably there will be some English type mistakes and grammar mistakes, I apologize for that.

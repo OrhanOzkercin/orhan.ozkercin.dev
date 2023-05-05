@@ -6,6 +6,7 @@
   konusunu anlatmaya çalıştığım blog yazısı."
   lang: "tr"
   cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 Herkese selamlar, bilgisayar mühendisliği ya da benzer bölümleri okuyan ya da mezun olan herkesin mutlaka işittiği, mülakatlara girmeye hazırlanan yazılımcıların bilmek zorunda hissettiği, bilgisayar bilimlerinin en temel konularından olan “Data Structures(Veri Yapıları)”ların bir örneği olan “Singly Linked List”ler ile ilgili öğrendiklerimi bu yazımda aktarmaya çalışacağım.

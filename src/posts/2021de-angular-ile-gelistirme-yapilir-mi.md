@@ -2,9 +2,10 @@
   title: "2021'de Angular İle Geliştirme Yapılır Mı?"
   date: "2021-04-13"
   author: "Orhan Özkerçin"
-  cover: "cover.jpeg"
   excerpt: "Angular frameworkü ile geliştirme yapmak 2021 yılında hala mantıklı mı? Avantajları ve dezavantajları neler? Angular anlatıldığı gibi ölen, biten bir framework mü?"
   lang: "tr"
+  cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 Herkese selamlar,

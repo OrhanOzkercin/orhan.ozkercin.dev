@@ -5,6 +5,7 @@
   excerpt: "Junior bir developer olarak işe girmek için ne gibi senaryolarla karşılaşabilirsiniz? Bu yazıda benim tecrübelerimden bahsederek size yardımcı olmaya çalışacağım."
   lang: "tr"
   cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 Çok amiyane bir tabir vardır 'Evin küçüğü olacağına kapının köpeği ol' diye. Hah, tam olarak özetler 'Junior Developer'ların halini :) Bu tüm dünyada böyle midir bilmiyorum fakat Türkiye'de ben biraz böyle olduğunu düşünüyorum. Yakın zamanda bir iş değiştirme durumum oldu ve çok büyük firmalar da dahil olmak üzere birçok firma ile görüşmeler gerçekleştirdim. Bu görüşmelerde nasıl tecrübeler yaşadım bunlardan bahsedeceğim ve naçizane birkaç tavsiye vereceğim bu konuda. Hayatımda ilk kez iş değiştirme durumu ile karşı karşıya kaldım ve benim de çok yabancı olduğum bir süreç geçirdim. Siz de benimle benzer durumdaysanız umarım derdinize tercüman olabilirim.

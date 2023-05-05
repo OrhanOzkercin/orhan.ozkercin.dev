@@ -5,6 +5,7 @@
   excerpt: "Bu yazımda staj arama sürecinde ve staj seçerken gözettigim kriterlerler nelerdi, bu süreçte neler yaptım/yapmalıyız bunlardan bahsedeceğim."
   lang: "tr"
   cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 Merhabalar, ben Orhan, bu yazımda staj arama sürecinde ve staj seçerken gözettigim kriterlerler nelerdi, bu süreçte neler yaptım/yapmalıyız bunlardan bahsedeceğim. Bu serinin ilk yazısı olacak. Bir sonraki yazımda ise staj kabulünden sonraki süreçte neler yaptım bunlardan bahsedeceğim.

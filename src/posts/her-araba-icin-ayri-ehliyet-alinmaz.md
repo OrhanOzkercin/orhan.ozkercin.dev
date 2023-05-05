@@ -5,6 +5,7 @@
   excerpt: "Her yeni araç ya da teknoloji kullandığımda tekrar tekrar aynı şeylere çalıştığımı farkettim. Aslında her şey o kadarda farklı değil. Bu sebeple her konu için sıfırdan başlamaya gerek yok."
   lang: "tr"
   cover: "cover.jpeg"
+  image: "cover.jpeg"
 ---
 
 Bugün bir süredir değiştirmek istediğim web sitemi kodlamaya başladım. Başlarken de kullanmadığım teknolojileri kullanayım diye düşündüm, en azından denemiş olurum dedim kendi kendime. Normalde çalıştığım firmada Vue ile geliştirme yaptığım için işten sonra kalan vaktimde ufak ufak React ile ilgili şeyler yapmaya çalışıyorum. Bir önceki şirketimde ise Angular ile geliştirme yapıyordum. React sadece benim kendi kendime kullanmaya çalıştığım bir teknoloji oldu. Bu projede de React kullanmaya karar verdim. Sonrasında sektörün parlayan yıldızı Tailwind denemeyi düşündüm. Bu yılın başlarında Tailwind öğrenmek istemiştim ama "configuration" işleri çok olduğu için gözüm korkmuştu.

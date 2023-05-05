@@ -1,5 +1,4 @@
 import PostContent from "@/components/blog/posts/post-detail/post-content";
-import PostSidebar from "@/components/blog/posts/post-detail/sidebar";
 
 import Meta from "@/components/meta";
 import { getPostData, getPostFiles } from "@/lib/posts/post-util";
@@ -10,8 +9,8 @@ const PostDetailPage = ({ post }) => {
       <Meta
         title={post.title}
         description={post.excerpt}
-        url={`https://orhan.ozkercin.com/blog/posts/${post.slug}`}
-        image={post.image}
+        url={`https://orhan.ozkercin.dev/blog/posts/${post.slug}`}
+        image={"https://orhan.ozkercin.dev/blog/posts/" + post.slug + "/" + post.image}
       >
         <meta name="author" content="Orhan Özkerçin" />
       </Meta>

@@ -8,7 +8,7 @@ import Link from 'next/link';
 function HomePage() {
   return (
     <section className='grid grid-cols-6 '>
-      <div className='col-span-4'>
+      <div className='col-span-6 md:col-span-4'>
         <AnimatedHeading
           text={'Hellooo there!'}
           className={'text-4xl font-thin leading-tight sm:text-7xl'}
@@ -29,7 +29,7 @@ function HomePage() {
           My CV
         </Link>
       </div>
-      <div className='col-span-2 flex flex-col gap-2'>
+      <div className='col-span-6 mt-6 flex flex-col gap-2 md:col-span-2 md:mt-0'>
         <LinkedinCard variant={'tiny'} />
         <TwitterCard />
         <GithubCard />

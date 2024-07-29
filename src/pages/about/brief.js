@@ -3,7 +3,7 @@ const Brief = ({ className }) => {
     <section className={`flex flex-col justify-start gap-3 ${className}`}>
       <h2 className='h2'>About</h2>
       <p className='w-full text-base font-normal  '>
-        With over 3 years of experience in frontend development, I am a skilled
+        With over 4 years of experience in frontend development, I am a skilled
         developer specializing in JavaScript. My passion for building visually
         stunning and functional user interfaces has driven me to become
         proficient in several popular frameworks, including Angular, VueJS, and
